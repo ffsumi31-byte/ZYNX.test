@@ -112,8 +112,9 @@ local function getAimPart()
 		return nil
 	end
 
-	return character:FindFirstChild("Head")
-		or character:FindFirstChild("HumanoidRootPart")
+	return character:FindFirstChild("UpperTorso")
+	or character:FindFirstChild("Torso")
+	or character:FindFirstChild("HumanoidRootPart")
 end
 
 --------------------------------------------------
